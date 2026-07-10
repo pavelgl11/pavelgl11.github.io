@@ -1,12 +1,14 @@
 
 .products {
-    padding: 56px 160px;
+    width: 100%;
+    padding: 56px 10%;
     max-width: 1440px;
-    height: 1056px;
+    min-height: 1056px;
     background-color: #ffffff;
     gap: 32px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 
 }
 .products-card {
