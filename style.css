@@ -149,6 +149,134 @@ background-color: #f5f5f5;
     height: 22px;
 }
 
+.banner{
+    display: flex;
+    width: 1440px;;
+    height: 632px;
+    justify-content: space-between;
+    padding-left: 160px;
+    padding-right: 160px;
+    background-color: #211c24;
+    align-items: center;
+
+
+    
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 714px;
+ height: 256px;
+ justify-content: center;
+    min-width: 400px;
+    gap: 24px;
+
+  
+    
+
+}
+
+.content-titles{
+    display: flex;
+    flex-direction: column;
+    width: 714px;
+   height: 128px;
+    gap: 24px;
+}
+
+.banner-title{
+height: 72px;
+font-family: 'Inter', sans-serif;
+font-weight: 100;
+font-style: thin;
+font-size: 96px;
+line-height: 72px;
+letter-spacing: -1%;
+margin: 0;
+
+}
+
+.content-titles span{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 72px;
+    letter-spacing: -1%;
+
+
+}
+
+.banner-subtitle{
+    width: 714px;
+    height: 32px;
+    opacity: 40%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 32px;
+    color: #ffffff;
+    margin: 0;
+
+}
+
+.banner-description {
+    width: 714px;
+    height: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #909090;
+    margin: 0;
+
+}
+
+.banner-button{
+    display: flex;
+    align-items: center;
+    width: 191px;
+    height: 56px;
+border: 1px solid #ffffff;
+border-radius: 6px;
+padding: 16px 56px;
+gap: 8px;
+white-space: nowrap;
+text-align: center;
+margin: 0;
+
+}
+
+.button-text {
+    width: 79px;
+    height: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px; 
+    color: #ffffff;
+    
+
+}
+
+.banner-image {
+    width: 406px;
+    height: 632px;
+   flex-shrink: 0;
+
+
+   
+    
+}
+.banner-image img{
+width: 406px;
+height: 632px;
+object-fit: cover;
+object-position: 50% -20%;
+}
+
+
 .products {
     padding: 56px 160px;
     width: 1440px;
