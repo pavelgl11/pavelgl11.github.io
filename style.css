@@ -1,14 +1,165 @@
 
-.products {
+body {
+    
+    padding: 0;
+    align-items: center;
     width: 100%;
-    padding: 56px 10%;
     max-width: 1440px;
-    min-height: 1056px;
+    margin: 0 auto;
+    max-height: 4976px;
+    color: #fafafa;
+
+
+}
+
+header {
+    width: 1440px;
+    max-width: 1440px;
+    
+    max-height: 88px;
+    margin: 0 auto;
+    padding: 16px 160px;
+    display: flex;
+    justify-content: space-between;
+    
+    color: #ffffff;
+    gap: 10px;
+align-items: center;
+
+
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: 65.4px;
+    height: 22.87px;
+    gap: 10px;
+
+
+
+   
+}
+.search input{
+background: transparent;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #656565;
+    opacity: 50%;
+
+}
+.search {
+    
+    width: 372px;
+    box-sizing: border-box;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    
+    padding: 16px;
+    gap: 8px;
+background-color: #f5f5f5; 
+}
+
+.search img {
+    width: 16px;
+    height: 16px;
+    color: #989898;
+
+
+}
+
+.menu-list{
+    display: flex;
+    width:  369px;
+    height: 19px;
+    gap: 52px;
+    white-space: nowrap;
+    
+    
+    
+
+}
+
+.active-list{
+    width: 46px;
+    height: 19px;
+    font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.about{
+    width: 47px;
+    height: 19px;
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    opacity: 30%;
+
+}
+
+.Blog{
+  width: 34px;
+    height: 19px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    opacity: 30%;   
+}
+
+
+.contact-us{
+        width: 86px;
+        height: 19px;
+        font-weight: 500;
+        opacity: 30%;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 100%;
+}
+
+.icons {
+    width: 144px;
+    height: 32px;
+    gap: 24px;
+    display: flex;
+    align-items: center;
+
+}
+.head-like{
+    width: 20px;
+    height: 17.83px;
+}
+.head-sale{
+    width: 24.89px;
+    height: 22px;
+}
+
+.head-profile{
+    width: 17px;
+    height: 22px;
+}
+
+.products {
+    padding: 56px 160px;
+    width: 1440px;
+    max-width: 1440px; 
+height: 1056px; 
     background-color: #ffffff;
     gap: 32px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 auto; 
+ 
 
 }
 .products-card {
@@ -28,8 +179,15 @@
 }
 
 .active{
+    font-family: 'Inter', sans-serif;
     border-bottom: 2px solid black;
-    
+    width: 100px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+white-space: nowrap;
 }
 button {
     border: none;
@@ -38,11 +196,35 @@ button {
 }
 .active2{
     color: #8b8b8b;
+     font-family: 'Inter', sans-serif;
+     width: 86px;
+     height: 32px;
+     font-size: 18px;
+     line-height: 32px;
+     font-weight: 500;
+    white-space: nowrap;
 }
+     .active-3{
+         font-family: 'Inter', sans-serif;
+         width: 159px;
+         height: 32px;
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 32px;
+         color: #8b8b8b;
+white-space: nowrap;
+
+
+     }
+
 .tags {
     display: flex;
+    height: 32px;
     gap: 32px;
     width: 1120px;
+    align-items: center;
+
+
 }
 img {
     width: 160px;
@@ -51,7 +233,7 @@ img {
 h3 {
     width: 236px;
     height: 48px;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -62,13 +244,14 @@ h3 {
 .price {
     width: 236px;
     height: 24px;
-    font-family: Inter, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 0px;
+    color: #000000;
 
 }
 .buy-now {
