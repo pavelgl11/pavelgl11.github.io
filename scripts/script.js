@@ -68,13 +68,12 @@ const products = [
 ]
 const productsGrid = document.querySelector(".products-grid");
 const categoryButtons = document.querySelectorAll("[data-category]");
-categoryButtons.forEach(button=>{
-    button.addEventListener("click", () => {
-       const selectedCategory = button.dataset.category;
-       if (selectedCategory === "All") {
-        renderProducts(products);
-       }
-       console.log(selectedCategory);
+categoryButtons.forEach(button => {
+    button.addEventListener("click", function() {
+       
+
+        // Фильтруем
+        filterProducts(this.dataset.category);
     });
 });
 function renderProducts (productsArray) {
@@ -102,5 +101,16 @@ productsArray.forEach(product => {
             </div>
     `;
 });
-}
+};
+function filterProducts(category){
+    if (category ==="All"){
+        renderProducts(products);
+    } else {
+        const filtred = products.filter(product =>
+            product.category === category);
+            renderProducts(filtred);
+        
+    };
+};
 renderProducts(products);
+
