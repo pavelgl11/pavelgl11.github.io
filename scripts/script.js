@@ -48,7 +48,6 @@ const products = [
     image: "assets/images/zfold.png",
     category: "Featured Products",
         favorite: true
-
 },
 {
     name: "Galaxy Buds FE <br> Graphite",
@@ -68,7 +67,19 @@ const products = [
 }
 ]
 const productsGrid = document.querySelector(".products-grid");
-products.forEach(product => {
+const categoryButtons = document.querySelectorAll("[data-category]");
+categoryButtons.forEach(button=>{
+    button.addEventListener("click", () => {
+       const selectedCategory = button.dataset.category;
+       if (selectedCategory === "All") {
+        renderProducts(products);
+       }
+       console.log(selectedCategory);
+    });
+});
+function renderProducts (productsArray) {
+    productsGrid.innerHTML = "";
+productsArray.forEach(product => {
     productsGrid.innerHTML += `
     <div class="products-card">
 <div class="card-header">
@@ -91,3 +102,5 @@ products.forEach(product => {
             </div>
     `;
 });
+}
+renderProducts(products);
